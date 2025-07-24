@@ -1,0 +1,218 @@
+<html>
+<head>
+    <title>Liked Songs</title>
+    <style>
+        body {
+            background-color: #181818;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .song-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .song {
+            width: 150px;
+            text-align: center;
+        }
+        .song img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .song-title {
+            font-size: 1em;
+            margin: 10px 0 5px;
+        }
+        .song-artist {
+            font-size: 0.9em;
+            color: #b3b3b3;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+        .controls button {
+            background-color: #1db954;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Liked Songs</h1>
+    <div class="song-container">
+        <div class="song">
+            <img alt="Light Teesko album cover" src="Mr-Perfect.jpg" width="150px" height="150px">
+            <div class="song-title">Light Teesko</div>
+            <!-- <div class="song-artist">Devi Sri Prasad</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio1')">Play</button>
+                <button onclick="pauseSong('audio1')">Pause</button>
+            </div>
+            <audio id="audio1" src="Light Theesko-SenSongsMp3.Co (1).mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="Chuttamalle album cover" src="Devara-Chuttamalle.jpg" />
+            <div class="song-title">Chuttamalle</div>
+            <!-- <div class="song-artist">Shilpa Rao, Anirudh</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio2')">Play</button>
+                <button onclick="pauseSong('audio2')">Pause</button>
+            </div>
+            <audio id="audio2" src="[iSongs.info] 03 - Chuttamalle.mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="Gabbar" src="Gabbar-Singh.jpg" width="150px" height="150px">
+            <div class="song-title">Dekho Dekho</div>
+            <!-- <div class="song-artist">Baba Sehgal, Naveen Madhav</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio3')">Play</button>
+                <button onclick="pauseSong('audio3')">Pause</button>
+            </div>
+            <audio id="audio3" src="dekho dkho gabbar singh.mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="arjun reddy" src="arjun reddy.jpeg" width="150px" height="150px">
+            <div class="song-title">Telisiney naa nuvve</div>
+            <!-- <div class="song-artist">L.V Revanth</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio4')">Play</button>
+                <button onclick="pauseSong('audio4')">Pause</button>
+            </div>
+            <audio id="audio4" src="Telisiney Na Nuvvey (From Arjun Reddy).mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="sakhi" src="sakhi.jpg" width="150px" height="150px">
+            <div class="song-title">Snehithudaa</div>
+            <!-- <div class="song-artist">Srinivas</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio5')">Play</button>
+                <button onclick="pauseSong('audio5')">Pause</button>
+            </div>
+            <audio id="audio5" src="snehithudaa.mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="surya son of krishnan" src="SURYA-SON-OF-KRISHNAN.jpg" width="150px" height="150px"/>
+            <div class="song-title">Nidhare Kala</div>
+            <!-- <div class="song-artist">Harris Jayaraj, Sudha Ragunathan</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio6')">Play</button>
+                <button onclick="pauseSong('audio6')">Pause</button>
+            </div>
+            <audio id="audio6" src="07 - Nidhare Kala - SenSongsMp3.co.mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="raghuvaran b tech" src="raghuvaran b tech.jpeg" width="150px" height="150px">
+            <div class="song-title">Chudandi Saaru</div>
+            <!-- <div class="song-artist">Hemachandra</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio7')">Play</button>
+                <button onclick="pauseSong('audio7')">Pause</button>
+            </div>
+            <audio id="audio7" src="Chudandi Saaru - SenSongsMp3.Co.mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="dear comrade" src="Dear-Comrade.jpg" width="150px" height="150px"/>
+            <div class="song-title">Nee Neeli</div>
+            <!-- <div class="song-artist">Gowtham Bharadwaj, Yamini</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio8')">Play</button>
+                <button onclick="pauseSong('audio8')">Pause</button>
+            </div>
+            <audio id="audio8" src="Nee Neeli Kannullona.mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="potugadu" src="Potugadu-2013.jpg" width="150px" height="150px">
+            <div class="song-title">Bujji Pilla</div>
+            <!-- <div class="song-artist">Silambarasan</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio9')">Play</button>
+                <button onclick="pauseSong('audio9')">Pause</button>
+            </div>
+            <audio id="audio9" src="Bujji Pilla - SenSongsmp3.Co.mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="varsham" src="varsham.webp" width="150px" height="150px"/>
+            <div class="song-title">Neeti Mullai</div>
+            <!-- <div class="song-artist">Sagar, Sumangaly</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio10')">Play</button>
+                <button onclick="pauseSong('audio10')">Pause</button>
+            </div>
+            <audio id="audio10" src="Neeti Mullai-SenSongsMp3.Co.mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="kushi" src="Kushi.jpg" width="150px" height="150px"/>
+            <div class="song-title">Premante</div>
+            <!-- <div class="song-artist">Devan Ekambaram, Kalpana, Samantha Fernander</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio11')">Play</button>
+                <button onclick="pauseSong('audio11')">Pause</button>
+            </div>
+            <audio id="audio11" src="premante.mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="gudumba shankar" src="Gudumba-Shankar.jpg" width="150px" height="150px"/>
+            <div class="song-title">Chitti Nadumune</div>
+            <!-- <div class="song-artist">Shankar Mahadevan & Premgi Amaren</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio12')">Play</button>
+                <button onclick="pauseSong('audio12')">Pause</button>
+            </div>
+            <audio id="audio12" src="Chitti Nadumune-SenSongsMp3.Co.mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="panja" src="panja.jpg" width="150px" height="150px"/>
+            <div class="song-title">Ela Ela Naalo</div>
+            <!-- <div class="song-artist">Haricharan, Shweta Pandit</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio13')">Play</button>
+                <button onclick="pauseSong('audio13')">Pause</button>
+            </div>
+            <audio id="audio13" src="[iSongs.info] 02 - Ela Ela.mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="kushi" src="Kushi.jpg" width="150px" height="150px"/>
+            <div class="song-title">Ammaye Sannaga</div>
+            <!-- <div class="song-artist">Kavitha Subramanyam & Udit Narayan</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio14')">Play</button>
+                <button onclick="pauseSong('audio14')">Pause</button>
+            </div>
+            <audio id="audio14" src="ammaye sannaga.mp3"></audio>
+        </div>
+        <div class="song">
+            <img alt="nuvvostanante nenoddanatana" src="nuvvostanante nenoddanatana.jpeg" width="150px" height="150px"/>
+            <div class="song-title">Niluvaddham Ninu</div>
+            <!-- <div class="song-artist">Karthik, Sumangali</div> -->
+            <div class="controls">
+                <button onclick="playSong('audio15')">Play</button>
+                <button onclick="pauseSong('audio15')">Pause</button>
+            </div>
+            <audio id="audio15" src="niluvaddham ninu.mp3"></audio>
+        </div>
+    </div>
+
+    <script>
+        function playSong(id) {
+            var audio = document.getElementById(id);
+            audio.play();
+        }
+
+        function pauseSong(id) {
+            var audio = document.getElementById(id);
+            audio.pause();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<html>
+ <head>
+  <title>
+   Music Streaming Registration Form
+  </title>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            padding: 20px;
+            background: url() no-repeat center center fixed;
+            background-color: #ffffff;
+            background-size: cover;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"], button {
+            background-color: #515251ea;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover, button:hover {
+            background-color: #4f4f56;
+        }
+        .checkbox-group, .radio-group {
+            margin: 10px 0;
+        }
+        a {
+            color: #0b0a0c;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            text-align: center;
+            width: 100%;
+            font-size: medium;
+            margin-top: 10px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <h2>
+    Music Streaming Website Registration
+   </h2>
+   <form action="/submit-registration" enctype="multipart/form-data" method="POST">
+    <label for="fullname">
+     Full Name:
+    </label>
+    <input id="fullname" name="fullname" required="" type="text"/>
+    <label for="username">
+     Username:
+    </label>
+    <input id="username" name="username" required="" type="text"/>
+    <label for="email">
+     Email Address:
+    </label>
+    <input id="email" name="email" required="" type="email"/>
+    <label for="dob">
+     Date of Birth:
+    </label>
+    <input id="dob" name="dob" type="date"/>
+    <label for="gender">
+     Gender (Optional):
+    </label>
+    <div class="radio-group">
+     <input id="male" name="gender" type="radio" value="male"/>
+     <label for="male">
+      Male
+     </label>
+     <input id="female" name="gender" type="radio" value="female"/>
+     <label for="female">
+      Female
+     </label>
+     <input id="other" name="gender" type="radio" value="other"/>
+     <label for="other">
+      Other
+     </label>
+    </div>
+    <label for="subscription">
+     Subscription Plan:
+    </label>
+    <div class="radio-group">
+     <input checked="" id="free" name="subscription" type="radio" value="free"/>
+     <label for="free">
+      Free
+     </label>
+     <input id="premium" name="subscription" type="radio" value="premium"/>
+     <label for="premium">
+      Premium
+     </label>
+    </div>
+    <label for="genres">
+     Favorite Genres (Optional):
+    </label>
+    <input id="genres" name="genres" placeholder="e.g., Pop, Rock, Jazz" type="text"/>
+    <label for="country">
+     Country:
+    </label>
+    <input id="country" name="country" required="" type="text"/>
+    <div class="checkbox-group">
+     <input id="terms" name="terms" required="" type="checkbox"/>
+     <label for="terms">
+      I agree to the
+      <a href="#">
+       Terms and Conditions
+      </a>
+     </label>
+    </div>
+    <div class="checkbox-group">
+     <input id="privacy" name="privacy" required="" type="checkbox"/>
+     <label for="privacy">
+      I agree to the
+      <a href="#">
+       Privacy Policy
+      </a>
+     </label>
+    </div>
+    <input type="submit" value="Register"/>
+    <button value="submit">
+     Next
+     <a href="/music_streaming_signup page.html">
+     </a>
+    </button>
+   </form>
+  </div>
+ </body>
+</html>
